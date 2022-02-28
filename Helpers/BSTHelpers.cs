@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lab4.Helpers
+namespace Lab3.Helpers
 {
     internal class BSTHelpers
     {

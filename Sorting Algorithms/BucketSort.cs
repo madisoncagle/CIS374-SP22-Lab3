@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Lab4.Helpers;
+using Lab3.Helpers;
 
-namespace Lab4.SortingAlgorithms
+namespace Lab3.SortingAlgorithms
 {
     /// <summary>
     /// A bucket sort implementation.

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Lab4.Helpers
+namespace Lab3.Helpers
 {
     //  implement IEnumerator.
     internal class BSTEnumerator<T> : IEnumerator<T> where T : IComparable<T>

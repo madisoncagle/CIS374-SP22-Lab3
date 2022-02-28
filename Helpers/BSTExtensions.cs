@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab4.Helpers
+namespace Lab3.Helpers
 {
     internal static class BSTExtensions
     {

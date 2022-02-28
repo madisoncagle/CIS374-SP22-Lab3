@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using Lab4.SortingAlgorithms;
+using Lab3.SortingAlgorithms;
 using System.Diagnostics;
 
-namespace Lab4
+namespace Lab3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            List<int> intList = GenerateRandomIntList(1000, 1000);
+            List<int> intList = GenerateRandomIntList(10000, 50000);
             
-            List<double> doubleList = GenerateRandomDoubleList(100, 500);
+            //List<double> doubleList = GenerateRandomDoubleList(100, 500);
 
             Console.WriteLine("[{0}]", string.Join(", ", intList.ToArray()));
             //Console.WriteLine("[{0}]", string.Join(", ", doubleList.ToArray()));
@@ -35,7 +35,7 @@ namespace Lab4
             //selectionSort.Sort(ref intList);
 
             //quickSort.Sort(ref intList);
-            QuickSort<double> quickSortDouble = new QuickSort<double>();
+            //QuickSort<double> quickSortDouble = new QuickSort<double>();
             //quickSortDouble.Sort(ref doubleList);
 
             //TreeSort<int> treeSort = new TreeSort<int>();
@@ -44,13 +44,20 @@ namespace Lab4
             //Console.WriteLine("[{0}]", string.Join(", ", intList.ToArray()));
             //Console.WriteLine("[{0}]", string.Join(", ", doubleList.ToArray()));
 
-
-
-            List<int> intListCopy;
-
+            Console.WriteLine("QUICKSORT");
             QuickSort<int> quickSort = new QuickSort<int>();
-            intListCopy = new List<int>(intList);   // make a copy of the original unsorted array
-            TimeSort(quickSort, intListCopy);
+            for( int i = 0; i < 11; i++)
+            {
+                List<int> intListCopy = new List<int>(intList);   // make a copy of the original unsorted array
+                TimeSort(quickSort, intListCopy);
+            }
+
+            MergeSort<int> mergeSort = new MergeSort<int>();
+            for (int i = 0; i < 11; i++)
+            {
+                List<int> intListCopy = new List<int>(intList);   // make a copy of the original unsorted array
+                TimeSort(mergeSort, intListCopy);
+            }
 
             //MergeSort<int> mergeSort = new MergeSort<int>();
             //intListCopy = new List<int>(intList);   // make a copy of the original unsorted array
@@ -84,7 +91,7 @@ namespace Lab4
             TimeSpan ts = stopWatch.Elapsed;
 
             // print info
-            Console.WriteLine(sortable.GetType().ToString());
+            //Console.WriteLine(sortable.GetType().ToString());
 
             // print elapsed time data
             //string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
@@ -109,7 +116,7 @@ namespace Lab4
             TimeSpan ts = stopWatch.Elapsed;
 
             // print info
-            Console.WriteLine(sortable.GetType().ToString());
+            //Console.WriteLine(sortable.GetType().ToString());
 
             // print elapsed time data
             //string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",

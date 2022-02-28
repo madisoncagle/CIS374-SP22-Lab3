@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Lab4.Helpers;
+using Lab3.Helpers;
 
-namespace Lab4.SortingAlgorithms
+namespace Lab3.SortingAlgorithms
 {
     /// <summary>
     /// A selection sort implementation.

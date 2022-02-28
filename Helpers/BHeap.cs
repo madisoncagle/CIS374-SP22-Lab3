@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Lab4.Helpers
+namespace Lab3.Helpers
 {
     /// <summary>
     /// A binary heap implementation.

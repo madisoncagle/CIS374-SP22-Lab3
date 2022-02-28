@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lab4.SortingAlgorithms
+namespace Lab3.SortingAlgorithms
 {
     /// <summary>
     /// A counting sort implementation.

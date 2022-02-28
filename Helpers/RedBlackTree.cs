@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Lab4.Helpers;
+using Lab3.Helpers;
 
-namespace Lab4.Helpers
+namespace Lab3.Helpers
 {
     /// <summary>
     /// A red black tree implementation.
